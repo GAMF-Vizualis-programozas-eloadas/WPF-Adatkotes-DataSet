@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF_Adatkotes_DataSet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:local="clr-namespace:WPF_Adatkotes_DataSet"
+        Title="Hallgatói adatok" Height="249" Width="504">
+  <DockPanel >
+    <Menu DockPanel.Dock="Top">
+      <Menu.ItemsPanel>
+        <ItemsPanelTemplate>
+          <DockPanel HorizontalAlignment="Stretch"/>
+        </ItemsPanelTemplate>
+      </Menu.ItemsPanel>
+      <MenuItem Name="miFájl" Header="_Fájl">
+        <MenuItem Name="miBeolvas" Header="_Beolvas" Click="miBeolvas_Click"/>
+        <MenuItem Name="miMent" Header="_Ment" Click="miMent_Click"/>
+        <Separator />
+        <MenuItem Name="miKilépés" Header="_Kilépés" Click="miKilépés_Click"/>
+      </MenuItem>
+			<MenuItem x:Name="miLista" Header="Lista" IsEnabled="False">
+				<MenuItem Header="_Rekordonként" x:Name="miRekordonként" Click="miRekordonként_Click"/>
+				<MenuItem Header="_Összes adat" x:Name="miÖsszesAdat" Click="miÖsszesAdat_Click" />
+			</MenuItem>
+			<MenuItem Name="miSúgó" Header="Súgó" HorizontalAlignment="Right">
+        <MenuItem.ItemsPanel>
+          <ItemsPanelTemplate>
+						<StackPanel HorizontalAlignment="Stretch"/>	
+					</ItemsPanelTemplate>
+				</MenuItem.ItemsPanel>
+      </MenuItem>
+    </Menu>
+		<StackPanel>
+			<local:ucRekordNezet x:Name="ucRekordNezet" Visibility="Collapsed"/>
+			<DataGrid x:Name="dgRács" Visibility="Collapsed" />
+		</StackPanel>
+  </DockPanel>
+</Window>

@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<dsHallgatók xmlns="http://tempuri.org/dsHallgatók.xsd">
+  <xs:schema id="dsHallgatók" targetNamespace="http://tempuri.org/dsHallgatók.xsd" xmlns:mstns="http://tempuri.org/dsHallgatók.xsd" xmlns="http://tempuri.org/dsHallgatók.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="dsHallgatók" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="dtHallgatók">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Vezetéknév" type="xs:string" minOccurs="0" />
+                <xs:element name="Keresztnév" type="xs:string" minOccurs="0" />
+                <xs:element name="EHA" type="xs:string" />
+                <xs:element name="GöngyölítettÁtlag" type="xs:double" minOccurs="0" />
+                <xs:element name="e_mail" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="dtHallgatókKey1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mstns:dtHallgatók" />
+        <xs:field xpath="mstns:EHA" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <dtHallgatók>
+    <Vezetéknév>Okoska</Vezetéknév>
+    <Keresztnév>Törp</Keresztnév>
+    <EHA>DERTFBH.KEFO</EHA>
+    <GöngyölítettÁtlag>3.5</GöngyölítettÁtlag>
+    <e_mail>ot@net.hu</e_mail>
+  </dtHallgatók>
+  <dtHallgatók>
+    <Vezetéknév>Duli</Vezetéknév>
+    <Keresztnév>Fuli</Keresztnév>
+    <EHA>DUFTRPH.KEFO</EHA>
+    <GöngyölítettÁtlag>4.2</GöngyölítettÁtlag>
+    <e_mail>df@net.hu</e_mail>
+  </dtHallgatók>
+  <dtHallgatók>
+    <Vezetéknév>Papa</Vezetéknév>
+    <Keresztnév>Törp</Keresztnév>
+    <EHA>PAPTFBH.KEFO</EHA>
+    <GöngyölítettÁtlag>4.9</GöngyölítettÁtlag>
+    <e_mail>pt@net.hu</e_mail>
+  </dtHallgatók>
+</dsHallgatók>

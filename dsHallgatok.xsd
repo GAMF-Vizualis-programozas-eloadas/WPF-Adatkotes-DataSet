@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHallgatók" targetNamespace="http://tempuri.org/dsHallgatók.xsd" xmlns:mstns="http://tempuri.org/dsHallgatók.xsd" xmlns="http://tempuri.org/dsHallgatók.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHallgatók" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsHallgatók" msprop:Generator_UserDSName="dsHallgatók">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtHallgatók" msprop:Generator_TableClassName="dtHallgatókDataTable" msprop:Generator_TableVarName="tabledtHallgatók" msprop:Generator_TablePropName="dtHallgatók" msprop:Generator_RowDeletingName="dtHallgatókRowDeleting" msprop:Generator_UserTableName="dtHallgatók" msprop:Generator_RowChangingName="dtHallgatókRowChanging" msprop:Generator_RowEvHandlerName="dtHallgatókRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHallgatókRowDeleted" msprop:Generator_RowEvArgName="dtHallgatókRowChangeEvent" msprop:Generator_RowChangedName="dtHallgatókRowChanged" msprop:Generator_RowClassName="dtHallgatókRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Vezetéknév" msprop:Generator_ColumnVarNameInTable="columnVezetéknév" msprop:Generator_ColumnPropNameInRow="Vezetéknév" msprop:Generator_ColumnPropNameInTable="VezetéknévColumn" msprop:Generator_UserColumnName="Vezetéknév" type="xs:string" minOccurs="0" />
+              <xs:element name="Keresztnév" msprop:Generator_ColumnVarNameInTable="columnKeresztnév" msprop:Generator_ColumnPropNameInRow="Keresztnév" msprop:Generator_ColumnPropNameInTable="KeresztnévColumn" msprop:Generator_UserColumnName="Keresztnév" type="xs:string" minOccurs="0" />
+              <xs:element name="EHA" msprop:Generator_ColumnVarNameInTable="columnEHA" msprop:Generator_ColumnPropNameInRow="EHA" msprop:Generator_ColumnPropNameInTable="EHAColumn" msprop:Generator_UserColumnName="EHA" type="xs:string" />
+              <xs:element name="GöngyölítettÁtlag" msprop:Generator_ColumnVarNameInTable="columnGöngyölítettÁtlag" msprop:Generator_ColumnPropNameInRow="GöngyölítettÁtlag" msprop:Generator_ColumnPropNameInTable="GöngyölítettÁtlagColumn" msprop:Generator_UserColumnName="GöngyölítettÁtlag" type="xs:double" minOccurs="0" />
+              <xs:element name="e_mail" msprop:Generator_ColumnVarNameInTable="columne_mail" msprop:Generator_ColumnPropNameInRow="e_mail" msprop:Generator_ColumnPropNameInTable="e_mailColumn" msprop:Generator_UserColumnName="e_mail" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="dtHallgatókKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:dtHallgatók" />
+      <xs:field xpath="mstns:EHA" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
